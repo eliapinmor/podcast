@@ -8,19 +8,21 @@ import Home from "./pages/Home";
 import Episodes from "./pages/Episodes";
 import Episode from "./pages/Episode";
 import Contact from "./pages/Contact";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/episodios" element={<Episodes />} />
-          <Route path="/episode/:id" element={<Episode />} />
-          <Route path="/contacto" element={<Contact />} />
-        </Routes>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/episodios" element={<Episodes />} />
+            <Route path="/episode/:id" element={<Episode />} />
+            <Route path="/contacto" element={<Contact />} />
+          </Routes>
+        </Layout>
       </BrowserRouter>
     </>
   );
