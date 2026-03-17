@@ -1,0 +1,17 @@
+[
+  {
+    "start": 0,
+    "end": 5,
+    "text": "Bienvenidos al episodio de hoy..."
+  },
+  {
+    "start": 5,
+    "end": 12,
+    "text": "Hoy hablaremos sobre..."
+  },
+  {
+    "start": 12,
+    "end": 20,
+    "text": "Primero, vamos a introducir el tema..."
+  }
+]
