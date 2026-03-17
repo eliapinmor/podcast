@@ -1,4 +1,5 @@
 import TitleLilysPodcast from "../components/TitleLilysPodcast";
+import Forms from "../components/Forms";
 
 export default function Contact() {
   return (
@@ -15,7 +16,7 @@ export default function Contact() {
               formulario explicandonos de que se trata
             </p>
           </div>
-          <div>forms</div>
+          <Forms />
         </div>
         <div className="w-1/2">
           <img src="images/microfono.png" className="m-auto" />

@@ -5,3 +5,9 @@
   --font-inter: "Inter", sans-serif;
   --font-inria: "Inria Serif", serif;
 }
+
+@layer components {
+  .input {
+    @apply w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+}
