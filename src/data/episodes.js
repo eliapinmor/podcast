@@ -3,7 +3,7 @@ export const episodes = [
     id: 1,
     title: "Episodio 1: Introducción",
     description: "Presentación del Podcast, enterate de que va. Pequeñas curiosidades sobre la saga de Crepúsculo y la serie The Office.",
-    audio: "/audios/episodio1.wav",
+    audio: "/audios/episodio1.mp3",
     cover: "/images/ep/demo.jpg",
     transcriptionFile: "/transcripts/episode1.json"
   },
