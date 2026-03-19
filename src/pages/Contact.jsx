@@ -16,10 +16,12 @@ export default function Contact() {
               formulario explicandonos de que se trata
             </p>
           </div>
-          <Forms />
+          <div className="flex flex-col items-center">
+            <Forms />
+          </div>
         </div>
         <div className="w-1/2">
-          <img src="images/microfono.png" className="m-auto" />
+          <img src="images/microfono.png" className="m-auto" alt="imagen de un microfono"/>
         </div>
       </div>
     </div>

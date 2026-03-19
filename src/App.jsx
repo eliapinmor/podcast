@@ -9,6 +9,7 @@ import Episodes from "./pages/Episodes";
 import Episode from "./pages/Episode";
 import Contact from "./pages/Contact";
 import Layout from "./components/Layout";
+import Licencias from "./pages/Licenses";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/episodios" element={<Episodes />} />
             <Route path="/episode/:id" element={<Episode />} />
             <Route path="/contacto" element={<Contact />} />
+            <Route path="/licencias" element={<Licencias />} />
           </Routes>
         </Layout>
       </BrowserRouter>

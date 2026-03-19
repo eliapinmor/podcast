@@ -17,7 +17,7 @@ export default function Episodes() {
           >
 
             <div className="w-72 h-48 rounded-lg">
-              <img src={ep.cover} />
+              <img src={ep.cover} alt="portada del epiosodio" />
             </div>
             <div className="w-[852px] inline-flex flex-col justify-start items-start gap-8">
               <div className="self-stretch justify-start text-black text-2xl font-semibold font-['Inter']">

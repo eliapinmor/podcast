@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { episodes } from "../data/episodes";
+import TitleLilysPodcast from "../components/TitleLilysPodcast";
 
 export default function Episode() {
   const { id } = useParams();
@@ -42,21 +43,22 @@ export default function Episode() {
   }, [currentTime, transcript]);
 
   return (
-    <div className="p-16 pl-24 w-5/7 m-auto flex flex-col items-center">
+    <div className="p-16 pt-6 pl-24 w-5/7 m-auto flex flex-col items-center">
+      <TitleLilysPodcast className="mt-5" />
       <video
         controls
         poster={episode.cover}
-        className="w-full h-124 rounded-2xl shadow-lg bg-black"
+        className="w-full h-164 mt-16 rounded-2xl shadow-lg bg-black object-cover"
       >
         <source src={episode.audio} type="audio/mpeg" />
         Tu navegador no soporta el elemento de vídeo.
       </video>
       <div className="pt-4 w-full">
         <div>
-          <h2 className="font-semibold text-2xl">{episode.title}</h2>
+          <h2 className="font-semibold text-4xl">{episode.title}</h2>
           {/* <div>like</div> */}
         </div>
-        <p className="text-xl font-inter text-black leading-relaxed">
+        <p className="text-xl font-inter font-regular mt-6 text-black leading-relaxed">
           {episode.description}
         </p>
         <div className="max-w-[800px] w-full mt-10 flex flex-col gap-6 max-h-[400px] overflow-y-auto pr-4">
