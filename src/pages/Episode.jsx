@@ -43,12 +43,12 @@ export default function Episode() {
   }, [currentTime, transcript]);
 
   return (
-    <div className="p-16 pt-6 pl-24 w-5/7 m-auto flex flex-col items-center">
+    <div className="md:p-16 pt-6 px:4 md:px-24 w-5/7 m-auto flex flex-col items-center">
       <TitleLilysPodcast className="mt-5" />
       <video
         controls
         poster={episode.cover}
-        className="w-full h-164 mt-16 rounded-2xl shadow-lg bg-black object-cover"
+        className="w-full aspect-video mt-16 rounded-2xl shadow-lg bg-black object-cover"
       >
         <source src={episode.audio} type="audio/mpeg" />
         Tu navegador no soporta el elemento de vídeo.
@@ -71,9 +71,7 @@ export default function Episode() {
               <div
                 key={index}
                 ref={(el) => (transcriptRefs.current[index] = el)}
-                className={`text-lg leading-relaxed transition-all rounded-md p-2 ${
-                  isActive ? "" : ""
-                }`}
+                className={`text-lg leading-relaxed transition-all rounded-md p-2`}
               >
                 <span className="font-bold text-neutral-600">
                   [{block.start}s - {block.end}s]

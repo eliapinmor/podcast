@@ -1,6 +1,6 @@
 export default function Forms() {
   return (
-    <div className="p-6 flex flex-col w-136">
+    <div className="p-6 flex flex-col w-full">
       <div>
         <label htmlFor="name">Nombre</label>
         <input type="text" id="name" className="input" />
@@ -18,7 +18,7 @@ export default function Forms() {
         <textarea id="message" className="input" />
       </div>
       <div className="m-auto mt-4">
-        <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-blue-600">Enviar</button>
+        <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-myred">Enviar</button>
       </div>
     </div>
   );

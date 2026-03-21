@@ -7,8 +7,8 @@ export default function Contact() {
       <div className="text-center">
         <TitleLilysPodcast />
       </div>
-      <div className="flex p-16 w-3/4 m-auto">
-        <div className="w-1/2">
+      <div className="flex flex-col md:flex-row p-16 w-3/4 m-auto items-center">
+        <div className="w-full md:w-1/2">
           <div>
             <p className="text-center font-medium font-['Inter']">
               ¿Tienes un dato curiosos sobre una serie o película que te
@@ -20,7 +20,7 @@ export default function Contact() {
             <Forms />
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="hidden md:block md:w-1/2">
           <img src="images/microfono.png" className="m-auto" alt="imagen de un microfono"/>
         </div>
       </div>

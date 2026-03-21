@@ -4,6 +4,7 @@
 @theme {
   --font-inter: "Inter", sans-serif;
   --font-inria: "Inria Serif", serif;
+  --color-myred: #82181a;
 }
 
 @layer components {
