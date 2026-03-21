@@ -61,7 +61,7 @@ export default function Episode() {
         <p className="text-xl font-inter font-regular mt-6 text-black leading-relaxed">
           {episode.description}
         </p>
-        <div className="max-w-[800px] w-full mt-10 flex flex-col gap-6 max-h-[400px] overflow-y-auto pr-4">
+        <div className="w-full mt-10 flex flex-col gap-6 max-h-[400px] overflow-y-auto pr-4">
 
           {transcript.map((block, index) => {
             const isActive =
@@ -72,7 +72,7 @@ export default function Episode() {
                 key={index}
                 ref={(el) => (transcriptRefs.current[index] = el)}
                 className={`text-lg leading-relaxed transition-all rounded-md p-2 ${
-                  isActive ? "bg-yellow-200" : ""
+                  isActive ? "" : ""
                 }`}
               >
                 <span className="font-bold text-neutral-600">
