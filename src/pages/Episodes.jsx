@@ -13,7 +13,7 @@ export default function Episodes() {
           <Link
             key={ep.id}
             to={`/episode/${ep.id}`}
-            className="w-full flex flex-col lg:flex-row px-12 py-10 rounded-3xl shadow-[4px_4px_4px_rgba(0,0,0,0.25)] inline-flex justify-start items-center gap-14 bg-red-500"
+            className="w-full flex flex-col lg:flex-row px-12 py-10 rounded-3xl shadow-[4px_4px_4px_rgba(0,0,0,0.25)] inline-flex justify-start items-center gap-14"
           >
 
             <div className="xl:w-1/5 rounded-lg bg-green-500 flex items-center">
