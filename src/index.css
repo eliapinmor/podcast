@@ -5,10 +5,55 @@
   --font-inter: "Inter", sans-serif;
   --font-inria: "Inria Serif", serif;
   --color-myred: #82181a;
+
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-accent: #d90429;
+}
+
+:root.high-contrast {
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-accent: #ffff00;
+}
+
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-inter);
+  }
 }
 
 @layer components {
   .input {
     @apply w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500;
   }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: black;
+    color: white;
+    padding: 8px 16px;
+    z-index: 100;
+    border-radius: 4px;
+    transition: top 0.2s ease;
+  }
+
+  .skip-link:focus {
+    top: 10px;
+  }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+

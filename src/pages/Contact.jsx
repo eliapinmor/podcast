@@ -3,7 +3,7 @@ import Forms from "../components/Forms";
 
 export default function Contact() {
   return (
-    <div>
+    <main id="main-content">
       <h1 className="hidden">contacto</h1>
       <div className="text-center">
         <TitleLilysPodcast />
@@ -25,6 +25,6 @@ export default function Contact() {
           <img src="images/microfono.png" className="m-auto" alt="imagen de un microfono"/>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

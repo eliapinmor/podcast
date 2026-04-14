@@ -2,7 +2,7 @@ import TitleLilysPodcast from "../components/TitleLilysPodcast";
 
 export default function Licencias() {
   return (
-    <div>
+    <main id="main-content">
       <div className="text-center">
         <TitleLilysPodcast />
       </div>
@@ -37,6 +37,6 @@ export default function Licencias() {
           </p>
         </section>
       </div>
-    </div>
+    </main>
   );
 }

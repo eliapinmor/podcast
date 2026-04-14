@@ -9,6 +9,7 @@ export default function Home() {
       style={{
         backgroundImage: "url('/images/old_tv.png')",
       }}
+      id="main-content"
     >
       <h1 className="hidden">Home</h1>
       {/* Contenido encima del fondo */}

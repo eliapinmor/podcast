@@ -43,8 +43,8 @@ export default function Episode() {
   }, [currentTime, transcript]);
 
   return (
-    <div className="md:p-16 pt-6 px:4 md:px-24 w-5/7 m-auto flex flex-col items-center">
-      <h1 className="">episodio {`${episode.title}`}</h1>
+    <main className="md:p-16 pt-6 px:4 md:px-24 w-5/7 m-auto flex flex-col items-center" id="main-content">
+      <h1 className="hidden">episodio {`${episode.title}`}</h1>
       <TitleLilysPodcast className="mt-5" />
       <video
         controls
@@ -52,6 +52,12 @@ export default function Episode() {
         className="w-full aspect-video mt-16 rounded-2xl shadow-lg bg-black object-cover"
       >
         <source src={episode.audio} type="audio/mpeg" />
+        <track
+          kind="captions"
+          src={`/subtitles/${episode.id}.vtt`}
+          srclang="es"
+          label="Español"
+        />
         Tu navegador no soporta el elemento de vídeo.
       </video>
       <div className="pt-4 w-full">
@@ -59,7 +65,7 @@ export default function Episode() {
           <h2 className="font-semibold text-4xl">{episode.title}</h2>
           {/* <div>like</div> */}
         </div>
-        <p className="text-xl font-inter font-regular mt-6 text-black leading-relaxed">
+        <p className="text-xl font-inter font-regular mt-6 leading-relaxed">
           {episode.description}
         </p>
         <div className="w-full mt-10 flex flex-col gap-6 max-h-[400px] overflow-y-auto pr-4">
@@ -84,6 +90,6 @@ export default function Episode() {
           })}
         </div>
       </div>
-    </div>
+    </main>
   );
 }
