@@ -21,7 +21,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="hidden md:block md:w-1/2">
-          <img src="images/microfono.png" className="m-auto" alt="imagen de un microfono"/>
+          <img src="images/microfono.png" className="m-auto" />
         </div>
       </div>
     </div>
