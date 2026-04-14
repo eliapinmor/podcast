@@ -44,6 +44,7 @@ export default function Episode() {
 
   return (
     <div className="md:p-16 pt-6 px:4 md:px-24 w-5/7 m-auto flex flex-col items-center">
+      <h1 className="">episodio {`${episode.title}`}</h1>
       <TitleLilysPodcast className="mt-5" />
       <video
         controls

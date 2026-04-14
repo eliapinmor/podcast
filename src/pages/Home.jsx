@@ -4,12 +4,13 @@ import { useState } from "react";
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
   return (
-    <div
+    <main
       className="relative w-full min-h-screen bg-cover bg-center"
       style={{
         backgroundImage: "url('/images/old_tv.png')",
       }}
     >
+      <h1 className="hidden">Home</h1>
       {/* Contenido encima del fondo */}
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <TitleLilysPodcast />
@@ -40,6 +41,6 @@ export default function Home() {
           </div>
         </div>
       )}
-    </div>
+    </main>
   );
 }
