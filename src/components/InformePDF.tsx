@@ -12,9 +12,15 @@ export default function InformePDF() {
         Proyecto React – Evaluación Técnica Completa Nivel AA
       </h2>
 
-      <p><strong>Autor:</strong> ELIA PINEDA MORENO</p>
-      <p><strong>Fecha:</strong> {new Date().toLocaleDateString()}</p>
-      <p><strong>Cliente:</strong> Plataforma digital educativa</p>
+      <p>
+        <strong>Autor:</strong> ELIA PINEDA MORENO
+      </p>
+      <p>
+        <strong>Fecha:</strong> {new Date().toLocaleDateString()}
+      </p>
+      <p>
+        <strong>Cliente:</strong> Plataforma digital educativa
+      </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">
         IDENTIFICACIÓN Y ENLACES OFICIALES DEL PROYECTO
@@ -42,17 +48,20 @@ export default function InformePDF() {
         </a>
       </p>
 
-      <p><strong>Branch analizada:</strong> main</p>
-      <p><strong>Commit base sin accesibilidad:</strong> commit-base</p>
+      <p>
+        <strong>Branch analizada:</strong> main
+      </p>
+      <p>
+        <strong>Commit base sin accesibilidad:</strong> commit-base
+      </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">
-        RESUMEN EJECUTIVO
-      </h2>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">RESUMEN EJECUTIVO</h2>
 
       <p>
         Este documento presenta la auditoría técnica completa realizada sobre la
         aplicación web desarrollada con React 19 y desplegada en entorno de
-        producción mediante Vercel. El análisis se basa en las WCAG 2.2 nivel AA.
+        producción mediante Vercel. El análisis se basa en las WCAG 2.2 nivel
+        AA.
       </p>
 
       <p>
@@ -62,8 +71,8 @@ export default function InformePDF() {
       </p>
 
       <p>
-        DOM (Document Object Model) es la representación estructural del HTML que
-        el navegador interpreta y que utilizan tecnologías de asistencia.
+        DOM (Document Object Model) es la representación estructural del HTML
+        que el navegador interpreta y que utilizan tecnologías de asistencia.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">AUDITORÍA INICIAL</h2>
@@ -79,9 +88,7 @@ export default function InformePDF() {
       <h3 className="text-xl font-semibold mt-4 mb-1">Wave</h3>
       <p>Detectó múltiples errores estructurales y de contraste.</p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">
-        PROBLEMAS DETECTADOS
-      </h2>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">PROBLEMAS DETECTADOS</h2>
 
       <h3 className="text-xl font-semibold mt-4 mb-1">
         Falta de etiqueta h1 en ciertas páginas
@@ -139,7 +146,7 @@ export default function InformePDF() {
       </h3>
 
       <pre className="bg-gray-200 p-3 rounded text-sm overflow-x-auto text-black">
-{`@media (prefers-reduced-motion: reduce) {
+        {`@media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
     transition: none !important;
@@ -162,9 +169,7 @@ export default function InformePDF() {
         botón accesible que permite activarlo.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">
-        VALIDACIÓN FINAL
-      </h2>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">VALIDACIÓN FINAL</h2>
 
       <p>
         Tras aplicar todas las mejoras, Lighthouse muestra una puntuación de
@@ -195,6 +200,61 @@ export default function InformePDF() {
         2.2 nivel AA. Se ha mejorado la estructura semántica, la navegación por
         teclado, la gestión de errores, el contraste y la adaptación a
         preferencias del usuario.
+      </p>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">CONCLUSIÓN</h2>
+
+      <p>
+        El proyecto ha evolucionado desde una estructura funcional básica hasta
+        una aplicación accesible que cumple con los criterios WCAG 2.2 nivel AA.
+        La transformación no ha consistido únicamente en corregir errores
+        puntuales, sino en una revisión profunda de la arquitectura, la
+        semántica y la interacción del sitio web. Este proceso ha permitido
+        convertir una interfaz inicialmente limitada en términos de
+        accesibilidad en una plataforma inclusiva, robusta y preparada para
+        usuarios con diferentes necesidades.
+      </p>
+
+      <p className="mt-3">
+        La incorporación de etiquetas semánticas como <code>&lt;main&gt;</code>,
+        <code>&lt;header&gt;</code> y <code>&lt;h1&gt;</code> ha mejorado la
+        estructura lógica del contenido, facilitando la navegación mediante
+        tecnologías de asistencia. La corrección del atributo <code>lang</code>{" "}
+        y la inclusión de textos alternativos en todas las imágenes garantizan
+        que los lectores de pantalla puedan interpretar correctamente la
+        información visual y textual.
+      </p>
+
+      <p className="mt-3">
+        La implementación del enlace “Saltar al contenido”, junto con la
+        verificación del orden de tabulación y la visibilidad del foco, asegura
+        que la web pueda utilizarse completamente mediante teclado, cumpliendo
+        así con los principios de operabilidad. Además, la mejora en la gestión
+        de errores del formulario y el uso de <code>aria-live</code> refuerzan
+        la comprensión del contenido dinámico para usuarios con discapacidad
+        visual.
+      </p>
+
+      <p className="mt-3">
+        Las mejoras avanzadas, como el modo de alto contraste y la adaptación a
+        la preferencia del usuario mediante <code>prefers-reduced-motion</code>,
+        demuestran un compromiso real con la accesibilidad más allá de los
+        requisitos mínimos. Estas funcionalidades permiten que la interfaz se
+        adapte a personas con baja visión, sensibilidad al movimiento o
+        necesidades específicas de percepción.
+      </p>
+
+      <p className="mt-3">
+        Finalmente, la generación automática del informe en PDF desde la propia
+        web refleja un dominio técnico adicional, integrando librerías externas
+        y garantizando que el contenido exportado sea accesible y coherente con
+        la versión visual del sitio.
+      </p>
+
+      <p className="mt-3">
+        En conjunto, el proyecto no solo cumple con los estándares WCAG 2.2
+        nivel AA, sino que también establece una base sólida para futuras
+        mejoras. La web es ahora más inclusiva, más clara y más usable,
+        ofreciendo una experiencia accesible para todos los usuarios.
       </p>
     </div>
   );
