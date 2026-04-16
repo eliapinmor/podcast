@@ -10,6 +10,7 @@ import Episode from "./pages/Episode";
 import Contact from "./pages/Contact";
 import Layout from "./components/Layout";
 import Licencias from "./pages/Licenses";
+import Informe from "./pages/Informe";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/episode/:id" element={<Episode />} />
             <Route path="/contacto" element={<Contact />} />
             <Route path="/licencias" element={<Licencias />} />
+            <Route path="/informe" element={<Informe />} />
           </Routes>
         </Layout>
       </BrowserRouter>
