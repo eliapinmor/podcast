@@ -16,7 +16,7 @@ export default function Episodes() {
             to={`/episode/${ep.id}`}
             className="
               w-full flex flex-col lg:flex-row px-12 py-10 rounded-3xl 
-              shadow-[4px_4px_4px_rgba(0,0,0,0.25)]
+              shadow-[4px_4px_4px_color-mix(in_srgb,var(--color-text)_25%,transparent)]
               inline-flex justify-start items-center gap-14
               bg-[var(--color-bg)] text-[var(--color-text)]
             "
